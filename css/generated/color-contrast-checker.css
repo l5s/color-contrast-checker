@@ -3,18 +3,6 @@
  * Website: http://www.levelfivesolutions.com/
  *
  */
-/* line 42, sprites/*.png */
-.sprites-sprite, .sprites-zoom {
-  background: url('../images/sprites-s8d2fcfcde9.png') no-repeat;
-}
-
-/* line 60, ../../../../../../../Users/timschieber/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.sprites-zoom {
-  background-position: 0 0;
-  height: 35px;
-  width: 35px;
-}
-
 /** Lists **/
 /*
  * Created by: Level Five Solutions

@@ -4,5 +4,5 @@
  *
  */
 
-@import "compass/css3";
-@import "compass/utilities";
+@import "sprites/*.png";
+@include all-sprites-sprites(true);
