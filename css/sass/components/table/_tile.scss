@@ -41,7 +41,7 @@ table.tile {
 					line-height: 13px;
 					opacity: 1;
 				}
-				&.on-white { border: 1px solid tint($gray, 50); }
+				&.on-white { border: 1px solid tint(#5a7881, 50); }
 				&.pass {
 					opacity: 1;
 					padding-left: 10px;
