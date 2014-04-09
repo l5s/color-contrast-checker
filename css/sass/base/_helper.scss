@@ -1,0 +1,191 @@
+/*
+ * Created by: Level Five Solutions
+ * Website: http://www.levelfivesolutions.com/
+ *
+ */
+
+/*
+	FLOAT UTILITIES
+*/
+
+.float-left { float: left; }
+.float-right { float: right; }
+
+.clear { clear: both; }
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+.clearfix { display: inline-block; }
+
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
+
+/*
+	DISPLAY
+*/
+
+.hide { display: none; }
+.show { display: block; }
+.invisible { visibility: hidden; }
+
+.spacer {  display: block; padding-bottom: 50px;padding-top: 50px; }
+.on-hover {
+	display: none;
+	&:hover { display: block; }
+}
+.off-hover {
+	&:hover { display: none; }
+}
+
+.inline { display: inline; }
+
+.small-screen { display: none; }
+.large-screen { display: block; }
+
+@media (max-width: 767px) {
+
+	.small-screen { display: block; }
+	.large-screen { display: none; }
+
+}
+
+/*
+	TEXT
+*/
+
+.em { font-style: italic; }
+.strong { font-weight: bold; }
+
+
+.txt-small { font-size: 12px; }
+.txt-xsm { font-size: 11px; line-height: 14px; }
+.txt-lg { font-size: 16px; line-height: 24px; }
+.txt-xlg { font-size: 20px; line-height: 16px; }
+.txt-dem { color: #b2aca5; }
+.txt-center { text-align: center; }
+
+.tight { margin-bottom: 0 !important; padding-bottom: 0 !important; }
+.extend { margin-left: -20px; margin-right: -20px; }
+.inset { padding-left: 20px; padding-right: 20px; }
+
+.align-center { text-align: center; }
+.align-right { text-align: right; }
+
+.align-bottom { vertical-align: bottom; }
+.align-middle { vertical-align: middle; }
+.align-top { vertical-align: top; }
+
+/*
+	PRINT
+*/
+
+.print-only { display: none; }
+
+/*
+	IMAGES
+*/
+
+img.full { width: 100%; }
+img.responsive { max-width: 100%; }
+.ir { text-indent: -999px; text-align: left; overflow: hidden; display: block; }
+.iir { text-indent: -999px; text-align: left; overflow: hidden; display: inline-block; vertical-align: middle; }
+.image-sprite { text-align: center; color: #fff; overflow: hidden; display: inline-block; vertical-align: middle; text-transform: uppercase; font-size: 12px; line-height: 20px; }
+
+/*
+	MARGINS
+*/
+
+.no-margin { margin: 0; }
+.no-margin-bottom { margin-bottom: 0; }
+.no-margin-top { margin-top: 0; }
+.no-margin-horizontal { margin-left: 0; margin-right: 0; }
+.no-margin-vertical { margin-bottom: 0; margin-top: 0; }
+
+.margin-bottom { margin-bottom: 20px; }
+.margin-bottom-half { margin-bottom: 10px; }
+.margin-bottom-large { margin-bottom: 40px; }
+.margin-bottom-small { margin-bottom: 5px; }
+
+.margin-left { margin-left: 20px; }
+.margin-left-half { margin-left: 10px; }
+.margin-left-large { margin-left: 40px; }
+.margin-left-small { margin-left: 5px; }
+
+.margin-right { margin-right: 20px; }
+.margin-right-half { margin-right: 10px; }
+.margin-right-large { margin-right: 40px; }
+.margin-right-small { margin-right: 5px; }
+
+.margin-top { margin-top: 20px; }
+.margin-top-half { margin-top: 10px; }
+.margin-top-large { margin-top: 50px; }
+.margin-top-medium { margin-top: 35px; }
+.margin-top-small { margin-top: 5px; }
+
+.vertical-margin { margin-bottom: 20px; margin-top: 20px; }
+.vertical-margin-small { margin-bottom: 10px; margin-top: 10px; }
+.vertical-margin-large { margin-bottom: 40px; margin-top: 40px; }
+
+.horizontal-margin { margin-left: 20px; margin-right: 20px; }
+.horizontal-margin-small { margin-left: 10px; margin-right: 10px; }
+.horizontal-margin-large { margin-left: 40px; margin-right: 40px; }
+
+/*
+	PADDING
+*/
+
+.no-padding { padding: 0; }
+.no-padding-bottom { padding-bottom: 0; }
+.no-padding-top { padding-top: 0; }
+.no-padding-horizontal { padding-left: 0; padding-right: 0; }
+.no-padding-vertical { padding-bottom: 0; padding-top: 0; }
+
+.padding-bottom { padding-bottom: 20px; }
+.padding-bottom-half { padding-bottom: 10px; }
+.padding-bottom-large { padding-bottom: 40px; }
+.padding-bottom-small { padding-bottom: 5px; }
+
+.padding-left { padding-left: 20px; }
+.padding-left-half { padding-left: 10px; }
+.padding-left-large { padding-left: 40px; }
+.padding-left-small { padding-left: 5px; }
+
+.padding-right { padding-right: 20px; }
+.padding-right-half { padding-right: 10px; }
+.padding-right-large { padding-right: 40px; }
+.padding-right-small { padding-right: 5px; }
+
+.padding-top { padding-top: 20px; }
+.padding-top-half { padding-top: 10px; }
+.padding-top-large { padding-top: 50px; }
+.padding-top-small { padding-top: 5px; }
+
+.vertical-padding { padding-bottom: 20px; padding-top: 20px; }
+.vertical-padding-small { padding-bottom: 10px; padding-top: 10px; }
+.vertical-padding-large { padding-bottom: 40px; padding-top: 40px; }
+
+.horizontal-padding { padding-left: 20px; padding-right: 20px; }
+.horizontal-padding-small { padding-left: 10px; padding-right: 10px; }
+.horizontal-padding-large { padding-left: 50px; padding-right: 50px; }
+
+@media (max-width: 767px) {
+
+	.mobile-margin-none { margin: 0; }
+	.mobile-margin-bottom { margin-bottom: 20px; }
+	.mobile-margin-left { margin: 20px; }
+	.mobile-padding-none { padding: 0; }
+	.mobile-padding-bottom { padding-bottom: 20px; }
+	.mobile-padding-top { margin-top: 20px; }
+	.mobile-padding-top-large { margin-top: 40px; }
+
+}

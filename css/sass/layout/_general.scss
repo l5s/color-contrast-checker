@@ -1,0 +1,58 @@
+/*
+ * Created by: Level Five Solutions
+ * Website: http://www.levelfivesolutions.com/
+ *
+ */
+
+* { @include box-sizing(border-box); }
+
+@mixin container {
+	@include pie-clearfix;
+	max-width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+.container { @include container; }
+
+/*
+	PAGE
+*/
+
+#page {
+	padding: 40px 0 40px 0;
+}
+
+/*
+	BAR
+*/
+
+.bar {
+	@include pie-clearfix;
+	> .left,> .right {
+		max-width: 80%;
+		&.short { max-width: 25%; }
+		&.wide { max-width: 70%; min-width: 50%; }
+	}
+	> .left { float: left; }
+	> .right { float: right; }
+	&.even {
+		> .left,> .right { width: 48%; }
+	}
+}
+
+/*
+	BACKGROUND
+*/
+
+.bg-white { background-color: #fff; }
+.bg-black { background-color: #000; }
+.bg-primary-green { background-color: $primary-green; }
+.bg-primary-blue { background-color: $primary-blue; }
+.bg-bright-blue { background-color: $bright-blue; }
+.bg-dark-blue { background-color: $dark-blue; }
+.bg-medium-green { background-color: $medium-green; }
+.bg-dark-green { background-color: $dark-green; }
+.bg-acid-green { background-color: $acid-green; }
+.bg-alert-orange { background-color: $alert-orange; }
+.bg-gray { background-color: $gray; }

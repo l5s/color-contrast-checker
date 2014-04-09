@@ -1,0 +1,32 @@
+/*
+ * Created by: Level Five Solutions
+ * Website: http://www.levelfivesolutions.com/
+ *
+ */
+
+ul.palette {
+	margin: 0 0 20px 0;
+	padding: 0;
+	li {
+		display: inline-block;
+		list-style-type: none;
+		margin: 0 0 20px 0;
+		text-align: center;
+		text-transform: uppercase;
+		width: 100px;
+		> span {
+			&.color {
+				border: 1px solid #eaeaea;
+				color: #000;
+				display: block;
+				height: 100px;
+				padding: 10px;
+				text-align: center;
+			}
+		}
+		> small { display: block; }
+
+		/** Text **/
+		&.white-text { color: #fff; }
+	}
+}

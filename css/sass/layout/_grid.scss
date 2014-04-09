@@ -1,0 +1,110 @@
+/*
+ * Created by: Level Five Solutions
+ * Website: http://www.levelfivesolutions.com/
+ *
+ */
+
+.col-group {
+	@include pie-clearfix;
+	> .col {
+		float: left;
+		padding-left: 10px;
+		padding-right: 10px;
+		width: 100%;
+		&.no-margin { margin: 0; }
+		&.no-padding { padding: 0; }
+
+		&.col-1-2 { width: 50%; }
+		&.col-1-3 { width: 33.33%; }
+		&.col-2-3 { width: 66.67%; }
+		&.col-1-4 { width: 25%; }
+		&.col-3-4 { width: 75%; }
+		&.col-1-5 { width: 20%; }
+		&.col-2-5 { width: 40%; }
+		&.col-3-5 { width: 60%; }
+		&.col-4-5 { width: 80%; }
+		&.col-1-6 { width: 16.6667%; }
+		&.col-5-6 { width: 83.335%; }
+		&.col-1-12 { width: 8.33% }
+		&.col-5-12 { width: 41.67% }
+		&.col-7-12 { width: 58.33% }
+		&.col-11-12 { width: 91.67% }
+		&.primary {
+			margin-left: 0;
+			width: 82.1%;
+		}
+		&.sidebar {
+			margin-left: 0;
+			width: 16.3%;
+		}
+		> .col-block {
+			margin-top: 20px;
+			&.no-margin { margin: 0; }
+			&.no-margin-bottom { margin-bottom: 0; }
+			&.side-padding { padding-left: 20px; padding-right: 20px; }
+			> .col-title {
+				color: #fff;
+				display: block;
+				font: 400 10px/10px 'Arial', sans-serif;
+				padding: 5px 20px;
+				text-align: center;
+				text-transform: uppercase;
+			}
+			> .col-content {
+				padding: 20px;
+				&.no-padding { padding: 0; }
+			}
+		}
+	}
+	&.squeeze {
+		margin: 0;
+		> .col {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+	&:first-child {
+		> .col {
+			> .col-block { margin-top: 0; }
+		}
+	}
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+
+	.col-group {
+		> .col {
+			padding-left: 0;
+			padding-right: 0;
+			&.col-1-2 { width: 100%; }
+			&.col-1-3 { width: 100%; }
+			&.col-2-3 { width: 100%; }
+			&.col-1-4 { width: 100%; }
+			&.col-3-4 { width: 100%; }
+			&.col-1-5 { width: 100%; }
+			&.col-2-5 { width: 100%; }
+			&.col-3-5 { width: 100%; }
+			&.col-4-5 { width: 100%; }
+			&.col-1-6 { width: 100%; }
+			&.col-5-6 { width: 100%; }
+			&.col-1-12 { width: 100% }
+			&.col-5-12 { width: 100% }
+			&.col-7-12 { width: 100% }
+			&.col-11-12 { width: 100% }
+			/** Spacing **/
+			> .col-block {
+				&.mobile-padding-left { padding-left: 20px; }
+			}
+		}
+		&:first-child {
+			> .col {
+				> .col-block { margin-top: 20px; }
+				&:first-child {
+					> .col-block { margin-top: 0; }
+				}
+			}
+		}
+	}
+
+}

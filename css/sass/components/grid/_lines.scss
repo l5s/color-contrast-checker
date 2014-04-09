@@ -1,0 +1,28 @@
+/*
+ * Created by: Level Five Solutions
+ * Website: http://www.levelfivesolutions.com/
+ *
+ */
+
+.show-grid-lines {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	> button {
+		left: 50px;
+		position: fixed;
+	}
+	> .line {
+		background-color: red;
+		display: block;
+		position: absolute;
+		width: 1px;
+		z-index: 99999;
+	}
+}
+
+@media (max-width: 1300px) {
+
+	.show-grid-lines { display: none; }
+
+}

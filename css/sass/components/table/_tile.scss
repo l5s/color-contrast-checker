@@ -1,0 +1,81 @@
+/*
+ * Created by: Level Five Solutions
+ * Website: http://www.levelfivesolutions.com/
+ *
+ */
+
+$font-secondary: 'Myriad Pro', 'Helvetica', 'Arial', sans-serif;
+
+table.tile {
+	border-spacing: 5px;
+    border-collapse: separate;
+	margin: 0 0 20px 0;
+	> thead {
+		> tr {
+			> th {
+				font: 300 13px/13px $font-secondary;
+				padding: 6px 12px;
+				text-align: center;
+				text-transform: uppercase;
+				&:first-child {
+					border-left: none;
+					color: #000;
+					font-weight: 700;
+				}
+			}
+		}
+	}
+	> tbody {
+		> tr {
+			> td {
+				@include border-radius(5px);
+				font: 300 14px/14px $font-secondary;
+				opacity: 0.5;
+				padding: 8px 3px;
+				text-align: center;
+				text-transform: uppercase;
+				@include transition(all 0.3s ease);
+				&:hover { opacity: 1; }
+				&:first-child {
+					font-size: 13px;
+					line-height: 13px;
+					opacity: 1;
+				}
+				&.on-white { border: 1px solid tint($gray, 50); }
+				&.pass {
+					opacity: 1;
+					padding-left: 10px;
+					position: relative;
+					&:before {
+						border: solid #fff;
+						border-width: 0 2px 2px 0;
+						content: "\00a0";
+						display: block;
+						height: 6px;
+						left: 14px;
+						margin-top: -3px;
+						position: absolute;
+						top: 40%;
+						@include transform(rotate(45deg));
+						width: 3px;
+					}
+					&.on-white {
+						&:before { border-color: #000; }
+					}
+				}
+			}
+		}
+	}
+	> tfoot {
+		> tr {
+			> td { padding-top: 10px; }
+		}
+	}
+	&.show-all {
+		> tbody {
+			> tr {
+				td { opacity: 1; }
+			}
+		}
+	}
+}

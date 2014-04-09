@@ -1,0 +1,42 @@
+/*
+ * Created by: Level Five Solutions
+ * Website: http://www.levelfivesolutions.com/
+ *
+ */
+
+@import "compass/css3";
+@import "compass/utilities";
+@import "sprites/*.png";
+@include all-sprites-sprites(true);
+
+/*
+	COLORS
+*/
+
+$body-color:    #666;
+
+/** Brand **/
+$primary-green: #62a70f;
+$primary-blue:  #003366;
+
+$bright-blue:   #249dd6;
+$dark-blue:     #070c20;
+$medium-green:  #008345;
+$dark-green:    #004f34;
+$acid-green:    #c3d600;
+
+$alert-orange:  #db5c0d;
+$gray:          #5a7881;
+
+/*
+	FONTS
+*/
+
+$font-primary:   'adelle', 'Arial', sans-serif;
+$font-secondary: 'adelle-sans', 'Arial', sans-serif;
+$font-tertiary:  'din-condensed-web', sans-serif;
+
+/*
+	GRADIENTS
+*/
+
