@@ -16,6 +16,7 @@ ul.palette {
 }
 /* line 10, ../sass/components/list/_palette.scss */
 ul.palette li {
+  color: #000;
   display: inline-block;
   list-style-type: none;
   margin: 0 0 20px 0;
@@ -24,10 +25,9 @@ ul.palette li {
   width: 100px;
   /** Text **/
 }
-/* line 18, ../sass/components/list/_palette.scss */
+/* line 19, ../sass/components/list/_palette.scss */
 ul.palette li > span.color {
   border: 1px solid #eaeaea;
-  color: #000;
   display: block;
   height: 100px;
   padding: 10px;
@@ -36,8 +36,9 @@ ul.palette li > span.color {
 /* line 27, ../sass/components/list/_palette.scss */
 ul.palette li > small {
   display: block;
+  font-size: 0.7em;
 }
-/* line 30, ../sass/components/list/_palette.scss */
+/* line 33, ../sass/components/list/_palette.scss */
 ul.palette li.white-text {
   color: #fff;
 }
@@ -95,7 +96,7 @@ table.tile > tbody > tr > td:first-child {
   opacity: 1;
 }
 /* line 44, ../sass/components/table/_tile.scss */
-table.tile > tbody > tr > td.on-white {
+table.tile > tbody > tr > td.add-border {
   border: 1px solid #acbbc0;
 }
 /* line 45, ../sass/components/table/_tile.scss */
@@ -123,7 +124,7 @@ table.tile > tbody > tr > td.pass:before {
   width: 3px;
 }
 /* line 63, ../sass/components/table/_tile.scss */
-table.tile > tbody > tr > td.pass.on-white:before {
+table.tile > tbody > tr > td.pass.add-border:before {
   border-color: #000;
 }
 /* line 71, ../sass/components/table/_tile.scss */

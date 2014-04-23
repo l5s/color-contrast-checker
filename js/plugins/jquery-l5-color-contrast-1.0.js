@@ -5,6 +5,7 @@
 		// Default options
 		options: {
 			
+			backgroundColor: '#ffffff',
 			colorList : 'ul.palette',
 			tableClass : '.tile .color-contrast',
 			tablePlacement : 'ul.palette',
@@ -32,7 +33,8 @@
 				rVal = hexToR(h);
 				gVal = hexToG(h);
 				bVal = hexToB(h);
-				returnVal = {R:rVal, G:gVal, B:bVal};
+				// Format the same way jQuery reads CSS colors
+				returnVal = 'rgb(' + rVal + ', ' + gVal +', ' + bVal + ')';
 				return returnVal;
 			}
 
@@ -56,6 +58,7 @@
 
 			var contrast_checker  = this,
 				palette           = contrast_checker.options.colorList,
+				backgroundColor   = contrast_checker.options.backgroundColor,
 				colors            = [],
 				contrastTable     = $('<table></table>').addClass(contrast_checker.options.tableClass.replace(/\./g,'')),
 				contrastTableHead = $('<thead></thead>'),
@@ -169,9 +172,9 @@
 						if (contrastRatio >= 3 || contrastRatio <= 0.33)
 							cell.addClass('pass');
 
-						// Designate white backgrounds
-						if (background === 'rgb(255, 255, 255)')
-							cell.addClass('on-white');
+						// Add borders to backgrounds that can't be seen
+						if (background === getHexValues(backgroundColor))
+							cell.addClass('add-border');
 						
 					});
 

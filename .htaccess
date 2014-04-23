@@ -1,11 +1,2 @@
-# Set hompage
-DirectoryIndex page-list.html
-
-# Clean URLs
-RewriteEngine On
-
-# Remove URL page extensions
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
-
 # Allow PHP in HTML page
 AddType application/x-httpd-php .html
